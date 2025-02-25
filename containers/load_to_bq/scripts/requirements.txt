@@ -1,0 +1,4 @@
+pandas
+mysql-connector-python
+google-cloud-storage
+google-cloud-bigquery

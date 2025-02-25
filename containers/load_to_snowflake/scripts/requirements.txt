@@ -1,0 +1,4 @@
+pandas==2.0.3
+snowflake-connector-python==2.7.2
+google-cloud-storage==2.9.0
+

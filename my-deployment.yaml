@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        resources:
+          requests:
+            cpu: "100m"   # Requesting 0.1 CPU
+            memory: "128Mi"  # Requesting 128 MB memory
+          limits:
+            cpu: "500m"    # Limiting to 0.5 CPU
+            memory: "512Mi"  # Limiting to 512 MB memory
